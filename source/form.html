@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="img/favicon.svg" rel="icon">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <nav class="main-nav">
+      <button class="main-nav__toggle visually-hidden" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list left-site-list">
+          <li class="left-site-list__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+
+          <li class="left-site-list__item">
+            <a href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+        </ul>
+
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo.svg" alt="Sity of Sedona">
+          <img src="img/logo-border.svg" width="187" height="97" alt="Sity of Sedona">
+        </a>
+
+        <ul class="main-nav__list right-site-list">
+          <li class="right-site-list__item">
+            <a>
+              Форма отзыва
+            </a>
+          </li>
+
+          <li class="right-site-list__item">
+            <a href="#">
+              Html academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-logo-text-container">
+      <img src="img/main-logo-text-sedona-only.svg" class="main-logo-text" width="460" height="80">
+      <img src="img/intro-triangle.svg.svg" class="intro-triangle">
+    </div>
+  </header>
+
+  <main class="form-container">
+    <div class="main-heading">
+      <h1 class="visually-hidden">Форма</h1>
+      <h2>
+        Оставьте свой отзыв
+      </h2>
+
+      <p>
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, <br>
+        а также о посещенных вами достопримечательностях
+      </p>
+    </div>
+
+    <section class="main-form-container">
+      <form class="main-form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="impression">
+          <legend>Ваше Общее впечатление:</legend>
+          <ul class="impression-list">
+            <li class="impression-item">
+              <input type="radio" name="impression" id="good" value="good" class="impression__good" checked>
+              <label for="good">Скорее положительное</label>
+            </li>
+            <li class="impression-item">
+              <input type="radio" name="impression" id="bad" value="bad" class="impression__bad">
+              <label for="bad">Скорее отрицательное</label>
+            </li>
+            <li class="impression-item">
+              <input type="radio" name="impression" id="neutral" value="neutral" class="impression__neutral">
+              <label for="neutral">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="user-information">
+          <legend>Представьтесь</legend>
+          <ul class="user-information__list">
+            <li class="user-information__item">
+              <label for="first-name">Имя*:</label>
+              <input type="text" name="first-name" id="first-name" class="user-information__first-name">
+            </li>
+            <li class="user-information__item">
+              <label for="second-name">Фамилия*:</label>
+              <input type="text" name="second-name" id="second-name" class="user-information__second-name">
+            </li>
+            <li class="user-information__item">
+              <label for="third-name">Отчество:</label>
+              <input type="text" name="third-name" id="third-name" class="user-information__third-name">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="contact-information">
+          <legend>Контактная информация</legend>
+          <ul class="contact-information__list">
+            <li class="contact-information__item">
+              <label for="phone">Телефон*:</label>
+              <input type="tel" name="phone" id="phone" class="contact-information__phone">
+            </li>
+            <li class="contact-information__item">
+              <label for="email">Электронная почта*:</label>
+              <input type="email" name="email" id="email" class="contact-information__email">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="attractions">
+          <legend>посещенные достопримечательности:</legend>
+          <ul class="attractions__list">
+            <li class="attractions__item">
+              <label for="bridge">Моста дьявола</label>
+              <input type="checkbox" name="attractions" id="bridge" value="bridge" class="attractions__bridge" checked>
+            </li>
+            <li class="attractions__item">
+              <label for="mountain">Гора-Колокол</label>
+              <input type="checkbox" name="attractions" id="mountain" value="mountain" class="attractions__mountain"
+                checked>
+            </li>
+            <li class="attractions__item">
+              <label for="slide">Слайд-парк</label>
+              <input type="checkbox" name="attractions" id="slide" value="slide" class="attractions__slide" checked>
+            </li>
+            <li class="attractions__item">
+              <label for="red">Красные скалы</label>
+              <input type="checkbox" name="attractions" id="red" value="red" class="attractions__red">
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="emotions">
+          <legend>Опишите свои эмоции:</legend>
+          <div class="emotions-container">
+            <textarea class="emotions-area" name="emotions" id="emotions"
+              placeholder="Опишите подробно все свои восторги "></textarea>
+          </div>
+        </fieldset>
+
+        <div class="send">
+          <button type="submit" class="button button-send">Отправить отзыв</button>
+          <abbr>* — обязательные поля</abbr>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <h2>
+      #VISITSEDONA
+    </h2>
+
+    <ul class="socials-list">
+      <li class="social-item">
+        <a class="twitter"><img src="img/icon-twitter.svg"></a>
+      </li>
+
+      <li class="social-item">
+        <a class="fb"><img src="img/icon-facebook.svg"></a>
+      </li>
+
+      <li class="social-item">
+        <a class="youtube"><img src="img/icon-youtube.svg"></a>
+      </li>
+    </ul>
+
+    <div class="html-academy-container">
+      <h3>
+        Разработано
+      </h3>
+      <img src="img/htmlacademy-black.svg">
+    </div>
+  </footer>
+</body>
+
+</html>
